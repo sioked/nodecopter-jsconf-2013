@@ -12,12 +12,14 @@ template = '
 <body>
     
     <img id="recent" src=""/>
-    <img id="processed" src=""/>
+    <img id="processed" src="" height="360" width="640"/>
+    <img id="processed2" src=""/>
 
     <script type="text/javascript" charset="utf-8">
         setInterval(function() {
             document.getElementById("recent").src = "/recent.png?r="+Math.random();
             document.getElementById("processed").src = "/processed.png?r="+Math.random();
+            document.getElementById("processed2").src = "/processed.png?r="+Math.random();
         }, 500);
     </script>
 </body>
