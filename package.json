@@ -1,0 +1,24 @@
+{
+  "name": "nodecopter-jsconf-2013",
+  "version": "0.0.0",
+  "description": "README.md",
+  "main": "index.js",
+  "dependencies": {
+    "ar-drone": "~0.1.0",
+    "coffee-script": "~1.6.2"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sioked/nodecopter-jsconf-2013.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "b83de9c27fb1d44589f37fbff50598c48831d4db"
+}
