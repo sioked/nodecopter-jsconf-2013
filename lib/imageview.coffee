@@ -1,6 +1,6 @@
 fs = require 'fs'
 http = require("http")
-dronestream = require("dronestream")
+# dronestream = require("dronestream")
 
 template = '
 
@@ -29,11 +29,11 @@ server = http.createServer (req, res) ->
 
   if req.url.match '/recent.png'
     res.writeHead 200, 'Content-Type': 'image/png'
-    fs.createReadStream('assets/1.png').pipe res
+    fs.createReadStream('assets/recent.png').pipe res
 
   else if req.url.match '/processed.png'
     res.writeHead 200, 'Content-Type': 'image/png'
-    fs.createReadStream('assets/1.png').pipe res
+    fs.createReadStream('assets/processed.png').pipe res
   
   else
     res.writeHead 200, 'Content-Type': 'text/html'
