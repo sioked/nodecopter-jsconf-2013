@@ -67,10 +67,6 @@ mainLoop = (pngBuffer) ->
       if prevDirection is "left"
         client.clockwise(0.1)
 
-    else if (firstRatio > 0) and (lastRatio < 0)
-      #Move up a bit- I think we're at the start of the line
-      client.front(0.05)
-
     else if path > 0
       # rotate right
       console.log "ROTATE RIGHT"
@@ -84,6 +80,11 @@ mainLoop = (pngBuffer) ->
       client.counterClockwise(0.1)
       # client.front(0.05)
       prevDirection = "left"
+
+    else if (firstRatio > 0) and (lastRatio < 0)
+      #Move up a bit- I think we're at the start of the line
+      console.log "Move up to get all the way on the line!"
+      client.front(0.05)
 
     else if firstRatio < 0.3
       # move left
